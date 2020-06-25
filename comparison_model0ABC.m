@@ -8,11 +8,11 @@ clear all
 
 %% Calculate transport rates
 % Random model parameters
-k = 10.^(4.*rand(10,1)-2*ones(10,1));   % rate constants k(i) corresponds to k_i
-L = 10.^(4.*rand(1)-2*ones(1));         % non-cognate substrate 
-l = 10.^(4.*rand(1)-2*ones(1));         % cognate substrate
-b = 10.^(4.*rand(1)-2*ones(1));         % SBP
-r = 10.^(4.*rand(1)-2*ones(1));         % translocator
+k = 10.^(3*ones(10,1) - 6.*rand(10,1));     % rate constants k(i) corresponds to k_i
+L = 10.^(3 - 6*rand(1));                    % non-cognate substrate 
+l = 10.^(3 - 6*rand(1));                    % cognate substrate
+b = 10.^(3 - 6*rand(1));                    % SBP
+r = 10.^(3 - 6*rand(1));                    % translocator
 
 % check input
 for i = 1:length(k)
